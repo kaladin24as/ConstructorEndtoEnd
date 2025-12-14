@@ -1,11 +1,29 @@
-<div align="center">
+# DataForge CLI Generator
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A robust, interactive CLI tool for scaffolding enterprise-grade Data Engineering & Analytics projects.
 
-  <h1>Built with AI Studio</h2>
+## Features
+- **Interactive Wizard**: Rich terminal UI to select stack components.
+- **Real Code Generation**: Produces executable Docker Compose, Python, dbt, and Terraform files.
+- **Architecture Preview**: Visual tree of the project structure before generation.
+- **Extensible Templates**: Jinja2-based templating system.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Installation
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+```bash
+pip install -r requirements.txt
+```
 
-</div>
+## Usage
+
+```bash
+python -m data_project_generator.cli create
+```
+
+## Project Structure generated
+- `ingestion/`: ELT pipelines (Airbyte/Custom Python)
+- `lakehouse/`: Bronze/Silver/Gold layers
+- `transformations/`: dbt projects / Spark jobs
+- `orchestration/`: Airflow DAGs / Dagster repositories
+- `infra/`: Terraform / Docker Compose
+- `docs/`: Architecture diagrams and setup guides

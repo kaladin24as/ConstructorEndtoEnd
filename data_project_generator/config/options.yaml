@@ -1,0 +1,57 @@
+project_types:
+  - id: batch
+    name: "Batch Data Engineering"
+    description: "Standard ELT pipelines with Airflow, dbt, and Data Warehouse."
+  - id: streaming
+    name: "Real-time Streaming"
+    description: "Event-driven architecture with Kafka and Spark."
+  - id: analytics
+    name: "Analytics Engineering"
+    description: "Lightweight stack with DuckDB, dbt, and BI tools."
+
+categories:
+  - id: cloud
+    label: "Cloud Provider"
+    tools:
+      - id: aws
+        name: "AWS"
+      - id: gcp
+        name: "Google Cloud"
+      - id: local
+        name: "Local Only"
+
+  - id: ingestion
+    label: "Ingestion"
+    tools:
+      - id: airbyte
+        name: "Airbyte (Docker)"
+      - id: python
+        name: "Custom Python Scripts"
+      - id: kafka
+        name: "Apache Kafka"
+
+  - id: warehouse
+    label: "Storage / Warehouse"
+    tools:
+      - id: postgres
+        name: "PostgreSQL"
+      - id: s3
+        name: "Data Lake (MinIO/S3)"
+      - id: duckdb
+        name: "DuckDB"
+
+  - id: transformation
+    label: "Transformation"
+    tools:
+      - id: dbt
+        name: "dbt Core"
+      - id: spark
+        name: "Apache Spark"
+
+  - id: orchestration
+    label: "Orchestration"
+    tools:
+      - id: airflow
+        name: "Apache Airflow"
+      - id: prefect
+        name: "Prefect"
